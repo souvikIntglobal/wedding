@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins
+        }
+
+        body {
+            background: #fff8f2;
+            overflow-x: hidden
+        }
+
+        /* ===== HERO BANNER ===== */
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* ===== MENU SECTION ===== */
+        .menu-section {
+            background: #3e0808;
+            padding: 30px 15px 90px;
+            color: #fff;
+        }
+
+        .menu-title {
+            text-align: center;
+            font-family: 'Playfair Display';
+            font-size: 32px;
+            margin-bottom: 25px;
+            color: #ffd76a;
+        }
+
+        /* CATEGORY BUTTONS */
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: #7c0b0b;
+            border: 1px solid #caa24c;
+            color: #ffd76a;
+            font-size: 13px;
+        }
+
+        .tab.active {
+            background: #ffd76a;
+            color: #6b0000;
+            font-weight: 600;
+        }
+
+
+
+        .card {
+            background: #290202;
+            border-radius: 14px;
+            padding: 18px;
+            border: 1px solid rgba(255, 215, 106, .4);
+            position: relative;
+            transition: .3s;
+            margin: 23px 5px;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 15px rgba(255, 215, 106, .5);
+        }
+
+        .card h3 {
+            font-family: 'Playfair Display';
+            color: #ffd76a;
+            font-size: 20px;
+            margin-bottom: 6px;
+        }
+
+        .card p {
+            font-size: 12px;
+            opacity: .9;
+        }
+
+        .tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            font-size: 10px;
+            padding: 4px 8px;
+            border: 1px solid #ffd76a;
+            border-radius: 10px;
+            color: #ffd76a;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            background: #6b0000;
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-around;
+            padding: 12px 0;
+            color: #ffd76a;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+        }
+
+        .navbar div {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        /* ===== FLOWER FALL ===== */
+        @keyframes fall {
+            to {
+                transform: translateY(110vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO BANNER (ONLY PROVIDED IMAGE) -->
+    <section class="hero">
+        <img src="asset/banner.png" alt="Wedding Banner">
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section">
+
+        <div class="menu-title">The Wedding Bhoj</div>
+       
+
+
+        <div class="menu-grid">
+
+            <div class="card">
+    <span class="tag">CRISPY STAR</span>
+    <h3>Butter Fish Fry</h3>
+    <p>মাখন মাখা crispy মাছ – first bite e love, second bite e fight!</p>
+</div>
+
+<div class="card">
+    <span class="tag">FRESH SIDEKICK</span>
+    <h3>Salad & Green Chatni</h3>
+    <p>স্বাস্থ্য আর স্বাদের perfect jodi – balance thakuk, pet-o thakuk happy.</p>
+</div>
+
+<div class="card">
+    <span class="tag">DOUBLE TREAT</span>
+    <h3>Motorsutir Kochuri</h3>
+    <p>আরো একবার! Kochuri without repeat? Eta toh Bengali rules er biruddhe.</p>
+</div>
+
+<div class="card">
+    <span class="tag">SPICY CHOICE</span>
+    <h3>Chili Paneer</h3>
+    <p>ঝাল ঝাল paneer – veg holeo attitude full non-veg level!</p>
+</div>
+
+<div class="card">
+    <span class="tag">CLASSIC COMFORT</span>
+    <h3>Sada Vat</h3>
+    <p>গরম ভাত – Bengali meal er asli hero, sob kichur sathe superstar.</p>
+</div>
+
+<div class="card">
+    <span class="tag">CHEF SPECIAL</span>
+    <h3>Fish Capsicum</h3>
+    <p>মাছ আর capsicum er colourful combo – plate e festival mood.</p>
+</div>
+
+
+
+<div class="card">
+    <span class="tag">ROYAL RETURN</span>
+    <h3>Afgan Polao</h3>
+    <p>বাদাম, ghee, aar royal feel – ek plate e Nawabi experience.</p>
+</div>
+
+<div class="card">
+    <span class="tag">GRAVY KING</span>
+    <h3>Mutton Kosa / Arr Mach / Chicken Kosa</h3>
+    <p>ঝোল ta joto beshi, bhat toto beshi – choose your emotion!</p>
+</div>
+
+<div class="card">
+    <span class="tag">SWEET TOUCH</span>
+    <h3>Amer Chatni</h3>
+    <p>মিষ্টি টক chatni – meal er last e ekta hasi guaranteed.</p>
+</div>
+
+<div class="card">
+    <span class="tag">CRUNCH TIME</span>
+    <h3>Papor</h3>
+    <p>চুপচাপ ভাঙে, কিন্তু khawar somoy full sound effect.</p>
+</div>
+
+<div class="card">
+    <span class="tag">HOT DESSERT</span>
+    <h3>Gorom Khirer Pantoa</h3>
+    <p>গরম গরম mishti – ekta kheye bolben, "আর একটা dao!"</p>
+</div>
+
+<div class="card">
+    <span class="tag">BENGALI PRIDE</span>
+    <h3>Pranhara</h3>
+    <p>নাম e bole dicche – ek bite e pran hara, diet kal theke!</p>
+</div>
+
+<div class="card">
+    <span class="tag">COOL SWEET</span>
+    <h3>Ice Cream</h3>
+    <p>ঠান্ডা ঠান্ডা happiness – bachcha theke boro sobar favourite.</p>
+</div>
+
+<div class="card">
+    <span class="tag">GRAND FINALE</span>
+    <h3>Paan</h3>
+    <p>শেষে ekta paan – meal complete, selfie ready, mood set!</p>
+</div>
+
+
+        </div>
+    </section>
+    <!-- ===== VENUE SECTION START ===== -->
+<section id="venue" class="venue-section">
+
+  <h2 class="venue-title">The Venue</h2>
+
+  <div class="venue-wrapper">
+
+    <!-- Google Map -->
+    <div class="venue-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.480810232193!2d88.3738209!3d23.406992499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91dff3d0a4c4b%3A0x69a7bce21394e965!2sHotel%20dreamland!5e0!3m2!1sen!2sin!4v1770363756141!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Venue Info Card -->
+    <div class="venue-card">
+
+      <div class="info-row">
+        <span class="icon">📍</span>
+        <div>
+          <strong>Dream Land Hotel & Lodge </strong><br>
+          Poraghat,Nabadwip<br>
+          West Bengal - 741302
+        </div>
+      </div>
+
+      <div class="info-row">
+        <span class="icon">📅</span>
+        <div>
+          <strong>Date & Day</strong><br>
+          February 8th, 2026 (Sunday)
+        </div>
+      </div>
+
+      <div class="info-row">
+        <span class="icon">⏰</span>
+        <div>
+          <strong>Timing</strong><br>
+          At Six o'clock in the evening<br>
+        </div>
+      </div>
+
+      <a target="_blank" href="https://www.google.com/maps/dir/22.4350654,88.2764884/Hotel+dreamland,+76+shribas,+Sribas+Angan+Ghat+Rd,+noth,+Nabadwip,+West+Bengal+741302/@22.9213224,88.2962683,9z/data=!3m1!4b1!4m19!1m8!3m7!1s0x39f91dff3d0a4c4b:0x69a7bce21394e965!2sHotel+dreamland!8m2!3d23.4070675!4d88.3738638!15sCilEcmVhbWxhbmQgSG90ZWwgJiBMb2RnZSBQb3JhZ2hhdCxOYWJhZHdpcJIBBWhvdGVs4AEA!16s%2Fg%2F11x1gfhj3r!4m9!1m1!4e1!1m5!1m1!1s0x39f91dff3d0a4c4b:0x69a7bce21394e965!2m2!1d88.3738638!2d23.4070675!3e9?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" class="direction-btn">GET DIRECTIONS</a>
+    </div>
+
+  </div>
+
+  <!-- Floating petals -->
+  <div class="petals">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+</section>
+
+<style>
+/* ===== VENUE THEME ===== */
+.venue-section {
+  background: linear-gradient(180deg,#6b0000,#4b0000);
+  padding: 70px 15px 110px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.venue-title {
+  font-size: 42px;
+  font-family: "Playfair Display", serif;
+  color: #FFD700;
+  margin-bottom: 30px;
+}
+
+/* Layout */
+.venue-wrapper {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* Map */
+.venue-map {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 3px solid #c9a227;
+}
+
+.venue-map iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* Card */
+.venue-card {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(120,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 25px;
+  border: 1px solid rgba(255,215,0,0.4);
+  box-shadow: 0 0 25px rgba(255,215,0,0.15);
+  text-align: left;
+}
+
+.venue-card h3 {
+  color: #FFD700;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+.info-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* Button */
+.direction-btn {
+  display: block;
+  margin-top: 20px;
+  background: linear-gradient(45deg,#d4af37,#ffd700);
+  color: #4b0000;
+  padding: 14px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.direction-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+/* Floating petals animation */
+.petals span {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #ffccd5;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: fall 10s linear infinite;
+}
+
+.petals span:nth-child(1){ left:10%; animation-delay:0s;}
+.petals span:nth-child(2){ left:30%; animation-delay:2s;}
+.petals span:nth-child(3){ left:50%; animation-delay:4s;}
+.petals span:nth-child(4){ left:70%; animation-delay:1s;}
+.petals span:nth-child(5){ left:90%; animation-delay:3s;}
+
+@keyframes fall {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(600px); }
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .venue-title { font-size: 32px; }
+}
+</style>
+<!-- ===== VENUE SECTION END ===== -->
+
+
+    <!-- BOTTOM NAV -->
+    <!-- <div class="navbar">
+        <div>🏠<br>Home</div>
+        <div>🍽️<br>Menu</div>
+        <div>✨<br>Special</div>
+        <div>📍<br>Venue</div>
+        <div>🎁<br>Blessings</div>
+    </div> -->
+
+    <script>
+        /* Flower animation */
+        function createFlower() {
+            const f = document.createElement("div");
+            f.innerHTML = "🌸";
+            f.style.position = "fixed";
+            f.style.left = Math.random() * 100 + "vw";
+            f.style.top = "-20px";
+            f.style.fontSize = (12 + Math.random() * 18) + "px";
+            f.style.opacity = .8;
+            f.style.animation = `fall ${5 + Math.random() * 5}s linear`;
+            document.body.appendChild(f);
+            setTimeout(() => f.remove(), 9000);
+        }
+        setInterval(createFlower, 700);
+    </script>
+
+</body>
+
+</html>
