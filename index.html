@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wedding</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
-        rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+            rel="stylesheet">
 
-    <style>
+        <style>
         * {
             margin: 0;
             padding: 0;
@@ -69,43 +69,55 @@
             font-weight: 600;
         }
 
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
 
 
         .card {
-            background: #290202;
-            border-radius: 14px;
-            padding: 18px;
-            border: 1px solid rgba(255, 215, 106, .4);
+            background: linear-gradient(135deg, #3e0808 0%, #290202 100%);
+            border-radius: 8px;
+            padding: 20px 16px;
+            border-left: 4px solid #ffd76a;
             position: relative;
             transition: .3s;
-            margin: 23px 5px;
+            margin: 12px 8px;
         }
 
         .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 0 15px rgba(255, 215, 106, .5);
+            transform: translateX(8px);
+            box-shadow: 0 5px 20px rgba(255, 215, 106, .3);
+            background: linear-gradient(135deg, #5e0808 0%, #390202 100%);
         }
 
         .card h3 {
             font-family: 'Playfair Display';
             color: #ffd76a;
-            font-size: 20px;
-            margin-bottom: 6px;
+            font-size: 22px;
+            margin-bottom: 8px;
+            font-weight: 700;
         }
 
         .card p {
-            font-size: 12px;
-            opacity: .9;
+            font-size: 13px;
+            opacity: .85;
+            line-height: 1.5;
         }
 
         .tag {
             position: absolute;
-            top: 12px;
-            right: 12px;
-            font-size: 10px;
-            padding: 4px 8px;
-            border: 1px solid #ffd76a;
-            border-radius: 10px;
+            top: 10px;
+            right: 10px;
+            font-size: 9px;
+            padding: 3px 7px;
+            background: rgba(255, 215, 106, .2);
+            border: 0.5px solid #ffd76a;
+            border-radius: 4px;
             color: #ffd76a;
         }
 
@@ -137,170 +149,140 @@
             }
         }
     </style>
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <!-- HERO BANNER (ONLY PROVIDED IMAGE) -->
-    <section class="hero">
-        <img src="asset/banner2.png" alt="Wedding Banner">
-    </section>
+        <!-- HERO BANNER (ONLY PROVIDED IMAGE) -->
+        <section class="hero">
+            <img src="asset/banner3.png" alt="Wedding Banner">
+        </section>
 
-    <!-- MENU SECTION -->
-    <section class="menu-section">
+        <!-- MENU SECTION -->
+        <section class="menu-section">
 
-        <div class="menu-title">The Wedding Bhoj</div>
-       
+    <div class="menu-title">The Wedding Bhoj</div>
 
+    <div class="menu-grid">
 
-        <div class="menu-grid">
-
-            <div class="card">
-    <span class="tag">CRISPY STAR</span>
-    <h3>Butter Fish Fry</h3>
-    <p>মাখন মাখা crispy মাছ – first bite e love, second bite e fight!</p>
-</div>
-
-<div class="card">
-    <span class="tag">FRESH SIDEKICK</span>
-    <h3>Salad & Green Chatni</h3>
-    <p>স্বাস্থ্য আর স্বাদের perfect jodi – balance thakuk, pet-o thakuk happy.</p>
-</div>
-
-<div class="card">
-    <span class="tag">DOUBLE TREAT</span>
-    <h3>Motorsutir Kochuri</h3>
-    <p>আরো একবার! Kochuri without repeat? Eta toh Bengali rules er biruddhe.</p>
-</div>
-
-<div class="card">
-    <span class="tag">SPICY CHOICE</span>
-    <h3>Chili Paneer</h3>
-    <p>ঝাল ঝাল paneer – veg holeo attitude full non-veg level!</p>
-</div>
-
-<div class="card">
-    <span class="tag">CLASSIC COMFORT</span>
-    <h3>Sada Vat</h3>
-    <p>গরম ভাত – Bengali meal er asli hero, sob kichur sathe superstar.</p>
-</div>
-
-<div class="card">
-    <span class="tag">CHEF SPECIAL</span>
-    <h3>Fish Capsicum</h3>
-    <p>মাছ আর capsicum er colourful combo – plate e festival mood.</p>
-</div>
-
-<div class="card">
-    <span class="tag">COOLER</span>
-    <h3>Jol Jeera</h3>
-    <p>এক চুমুকেই pet thanda, mon fresh – digestion er superhero!</p>
-</div>
-
-<div class="card">
-    <span class="tag">ROYAL RETURN</span>
-    <h3>Afgan Polao</h3>
-    <p>বাদাম, ghee, aar royal feel – ek plate e Nawabi experience.</p>
-</div>
-
-<div class="card">
-    <span class="tag">GRAVY KING</span>
-    <h3>Mutton Kosa / Arr Mach / Chicken Kosa</h3>
-    <p>ঝোল ta joto beshi, bhat toto beshi – choose your emotion!</p>
-</div>
-
-<div class="card">
-    <span class="tag">SWEET TOUCH</span>
-    <h3>Amer Chatni</h3>
-    <p>মিষ্টি টক chatni – meal er last e ekta hasi guaranteed.</p>
-</div>
-
-<div class="card">
-    <span class="tag">CRUNCH TIME</span>
-    <h3>Papor</h3>
-    <p>চুপচাপ ভাঙে, কিন্তু khawar somoy full sound effect.</p>
-</div>
-
-<div class="card">
-    <span class="tag">HOT DESSERT</span>
-    <h3>Gorom Khirer Pantoa</h3>
-    <p>গরম গরম mishti – ekta kheye bolben, "আর একটা dao!"</p>
-</div>
-
-<div class="card">
-    <span class="tag">BENGALI PRIDE</span>
-    <h3>Pranhara</h3>
-    <p>নাম e bole dicche – ek bite e pran hara, diet kal theke!</p>
-</div>
-
-<div class="card">
-    <span class="tag">COOL SWEET</span>
-    <h3>Ice Cream</h3>
-    <p>ঠান্ডা ঠান্ডা happiness – bachcha theke boro sobar favourite.</p>
-</div>
-
-<div class="card">
-    <span class="tag">GRAND FINALE</span>
-    <h3>Paan</h3>
-    <p>শেষে ekta paan – meal complete, selfie ready, mood set!</p>
-</div>
-
-
+        <div class="card">
+            <h3>Fish Cutlet</h3>
+            <p>প্রথম পাতে Fish Cutlet 🥗 Chatni Salad সঙ্গে নিয়ে জমিয়ে দিল আসরের শুরু</p>
         </div>
-    </section>
-    <!-- ===== VENUE SECTION START ===== -->
-<section id="venue" class="venue-section">
 
-  <h2 class="venue-title">The Venue</h2>
+        <div class="card">
+            <h3>Sahi Kochuri</h3>
+            <p>তারপরই দেখা দিল Sahi Kochuri </p>
+        </div>
 
-  <div class="venue-wrapper">
+        <div class="card">
+            <h3>Chana Paneer</h3>
+            <p>পিছে পিছে এসে দাঁড়ালো Chana Paneer</p>
+        </div>
 
-    <!-- Google Map -->
-    <div class="venue-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.480810232193!2d88.3738209!3d23.406992499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91dff3d0a4c4b%3A0x69a7bce21394e965!2sHotel%20dreamland!5e0!3m2!1sen!2sin!4v1770363756141!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="card">
+            <h3>Sada Vat </h3>
+            <p>তোমরা খাচ্ছো সাহেবী খাবার, আমি যে ভেতো বাঙালী আবার!</p>
+        </div>
+        <div class="card">
+            <h3>Sona Mug</h3>
+            <p>সাদা ভাতে Sona Mug এর সুগন্ধে ভরপুর — তৈরি হলো আসল বাঙালী জমজমাট পর্ব</p>
+        </div>
+
+        <div class="card">
+            <h3>Doi Katla</h3>
+            <p>এবার এলো Doi Katla — খেয়ে নিলো সবাই আনন্দ ভরে</p>
+        </div>
+
+        <div class="card">
+            <h3>Mutton Kosha</h3>
+            <p>তারপরই হাজির Mutton Kosha 🍖 — সাদা ভাতে খেয়ে মজা হলো দ্বিগুণ</p>
+        </div>
+
+        <div class="card">
+            <h3>Amer Chatni</h3>
+            <p>Mutton এর পর Amer Chatni সুর ধরলো</p>
+        </div>
+
+        <div class="card">
+            <h3>Papri</h3>
+            <p>Papri ভায়ার সঙ্গে মিলিয়ে দিল মিষ্টি টক এই যুগলবন্দী</p>
+        </div>
+
+        <div class="card">
+            <h3>Malai Chamcham</h3>
+            <p>এরপর Malai Chamcham গান ধরলো মিষ্টির আসরে</p>
+        </div>
+
+        <div class="card">
+            <h3>Kalakader</h3>
+            <p>Kalakader এসে মিষ্টিমুখের আনন্দকে করলো সম্পূর্ণ</p>
+        </div>
+
+        <div class="card">
+            <h3>Ice Cream</h3>
+            <p>Ice Cream 🍦 এসে দিল ঠান্ডা সুখের শেষ ছোঁয়া</p>
+        </div>
+
+        <div class="card">
+            <h3>Hajmola</h3>
+            <p>শেষে Hajmola বললো — চলো এবার টা-টা Bye Bye!</p>
+        </div>
+
     </div>
-
-    <!-- Venue Info Card -->
-    <div class="venue-card">
-
-      <div class="info-row">
-        <span class="icon">📍</span>
-        <div>
-          <strong>Dream Land Hotel & Lodge </strong><br>
-          Poraghat,Nabadwip<br>
-          West Bengal - 741302
-        </div>
-      </div>
-
-      <div class="info-row">
-        <span class="icon">📅</span>
-        <div>
-          <strong>Date & Day</strong><br>
-          February 8th, 2026 (Sunday)
-        </div>
-      </div>
-
-      <div class="info-row">
-        <span class="icon">⏰</span>
-        <div>
-          <strong>Timing</strong><br>
-          At Six o'clock in the evening<br>
-        </div>
-      </div>
-
-      <a target="_blank" href="https://www.google.com/maps/dir/22.4350654,88.2764884/Hotel+dreamland,+76+shribas,+Sribas+Angan+Ghat+Rd,+noth,+Nabadwip,+West+Bengal+741302/@22.9213224,88.2962683,9z/data=!3m1!4b1!4m19!1m8!3m7!1s0x39f91dff3d0a4c4b:0x69a7bce21394e965!2sHotel+dreamland!8m2!3d23.4070675!4d88.3738638!15sCilEcmVhbWxhbmQgSG90ZWwgJiBMb2RnZSBQb3JhZ2hhdCxOYWJhZHdpcJIBBWhvdGVs4AEA!16s%2Fg%2F11x1gfhj3r!4m9!1m1!4e1!1m5!1m1!1s0x39f91dff3d0a4c4b:0x69a7bce21394e965!2m2!1d88.3738638!2d23.4070675!3e9?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" class="direction-btn">GET DIRECTIONS</a>
-    </div>
-
-  </div>
-
-  <!-- Floating petals -->
-  <div class="petals">
-    <span></span><span></span><span></span><span></span><span></span>
-  </div>
-
 </section>
+        <!-- ===== VENUE SECTION START ===== -->
+        <section id="venue" class="venue-section">
 
-<style>
+            <h2 class="venue-title">The Venue</h2>
+
+            <div class="venue-wrapper">
+
+                <!-- Google Map -->
+                <!-- <div class="venue-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3661.480810232193!2d88.3738209!3d23.406992499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91dff3d0a4c4b%3A0x69a7bce21394e965!2sHotel%20dreamland!5e0!3m2!1sen!2sin!4v1770363756141!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
+
+                <!-- Venue Info Card -->
+                <div class="venue-card">
+
+                    <div class="info-row">
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>Debinagar Kalyangarh   </strong><br>
+                            Ashoknagar<br>
+                            West Bengal - 743272
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="icon">📅</span>
+                        <div>
+                            <strong>Date & Day</strong><br>
+                            9th March 2026 (MONDAY)
+                        </div>
+                    </div>
+
+
+                    <!-- <a target="_blank"
+                        href="https://www.google.com/maps/dir/22.4350654,88.2764884/Hotel+dreamland,+76+shribas,+Sribas+Angan+Ghat+Rd,+noth,+Nabadwip,+West+Bengal+741302/@22.9213224,88.2962683,9z/data=!3m1!4b1!4m19!1m8!3m7!1s0x39f91dff3d0a4c4b:0x69a7bce21394e965!2sHotel+dreamland!8m2!3d23.4070675!4d88.3738638!15sCilEcmVhbWxhbmQgSG90ZWwgJiBMb2RnZSBQb3JhZ2hhdCxOYWJhZHdpcJIBBWhvdGVs4AEA!16s%2Fg%2F11x1gfhj3r!4m9!1m1!4e1!1m5!1m1!1s0x39f91dff3d0a4c4b:0x69a7bce21394e965!2m2!1d88.3738638!2d23.4070675!3e9?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+                        class="direction-btn">GET DIRECTIONS</a> -->
+                </div>
+
+            </div>
+
+            <!-- Floating petals -->
+            <div class="petals">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+
+        </section>
+
+        <style>
 /* ===== VENUE THEME ===== */
 .venue-section {
   background: linear-gradient(180deg,#6b0000,#4b0000);
@@ -418,11 +400,10 @@
   .venue-title { font-size: 32px; }
 }
 </style>
-<!-- ===== VENUE SECTION END ===== -->
+        <!-- ===== VENUE SECTION END ===== -->
 
-
-    <!-- BOTTOM NAV -->
-    <!-- <div class="navbar">
+        <!-- BOTTOM NAV -->
+        <!-- <div class="navbar">
         <div>🏠<br>Home</div>
         <div>🍽️<br>Menu</div>
         <div>✨<br>Special</div>
@@ -430,7 +411,7 @@
         <div>🎁<br>Blessings</div>
     </div> -->
 
-    <script>
+        <script>
         /* Flower animation */
         function createFlower() {
             const f = document.createElement("div");
@@ -447,6 +428,6 @@
         setInterval(createFlower, 700);
     </script>
 
-</body>
+    </body>
 
 </html>
